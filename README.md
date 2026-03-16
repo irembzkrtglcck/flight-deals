@@ -30,6 +30,22 @@ Google Sheets'teki şehirlere en ucuz uçuşları bulan ve bütçenizin altında
 - smtplib (email gönderimi)
 - dotenv (ortam değişkenleri yönetimi)
 
+### Kurulum
+
+1. Repoyu klonlayın
+2. Aşağıdaki değişkenlerle bir `.env` dosyası oluşturun:
+```
+SHEETY_ENDPOINT=sheety_endpoint_adresiniz
+SHEETY_TOKEN=sheety_tokeniniz
+AMADEUS_API_KEY=amadeus_api_anahtariniz
+AMADEUS_API_SECRET=amadeus_api_sifresi
+AMADEUS_ENDPOINT=https://test.api.amadeus.com/v1/security/oauth2/token
+MY_EMAIL=emailadresiniz@gmail.com
+MY_EMAIL_PASSWORD=uygulama_sifreniz
+```
+3. Bağımlılıkları yükleyin: `pip install requests python-dotenv`
+4. Çalıştırın: `python main.py`
+
 ---
 
 ## 🇬🇧 English
